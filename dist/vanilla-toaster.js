@@ -17,7 +17,7 @@ var me = {
   endDelay: 0,
   easing: "easeOutElastic(1, .5)",
   round: 0
-}, je = ["translateX", "translateY", "translateZ", "rotate", "rotateX", "rotateY", "rotateZ", "scale", "scaleX", "scaleY", "scaleZ", "skew", "skewX", "skewY", "perspective", "matrix", "matrix3d"], W = {
+}, Ve = ["translateX", "translateY", "translateZ", "rotate", "rotateX", "rotateY", "rotateZ", "scale", "scaleX", "scaleY", "scaleZ", "skew", "skewX", "skewY", "perspective", "matrix", "matrix3d"], W = {
   CSS: {},
   springs: {}
 };
@@ -104,7 +104,7 @@ function xe(e, r) {
   }
   return r ? h : C;
 }
-function Ve(e) {
+function je(e) {
   return e === void 0 && (e = 10), function(r) {
     return Math.ceil(k(r, 1e-6, 1) * e) * (1 / e);
   };
@@ -236,7 +236,7 @@ function X(e, r) {
     case "cubicBezier":
       return _(ze, i);
     case "steps":
-      return _(Ve, i);
+      return _(je, i);
     default:
       return _(t, i);
   }
@@ -360,7 +360,7 @@ function Me(e, r, n) {
 function te(e, r) {
   if (f.dom(e) && !f.inp(e) && (!f.nil(P(e, r)) || f.svg(e) && e[r]))
     return "attribute";
-  if (f.dom(e) && ee(je, r))
+  if (f.dom(e) && ee(Ve, r))
     return "transform";
   if (f.dom(e) && r !== "transform" && Me(e, r))
     return "css";
@@ -720,13 +720,13 @@ function y(e) {
   }
   function m(g) {
     for (var d = 0, T = a.animations, S = T.length; d < S; ) {
-      var w = T[d], B = w.animatable, j = w.tweens, L = j.length - 1, M = j[L];
-      L && (M = N(j, function(Fe) {
+      var w = T[d], B = w.animatable, V = w.tweens, L = V.length - 1, M = V[L];
+      L && (M = N(V, function(Fe) {
         return g < Fe.end;
       })[0] || M);
-      for (var A = k(g - M.start - M.delay, 0, M.duration) / M.duration, U = isNaN(A) ? 1 : M.easing(A), E = M.to.strings, $ = M.round, Q = [], Ae = M.to.numbers.length, F = void 0, V = 0; V < Ae; V++) {
-        var z = void 0, se = M.to.numbers[V], ce = M.from.numbers[V] || 0;
-        M.isPath ? z = Ge(M.value, U * se, M.isPathTargetInsideSVG) : z = ce + U * (se - ce), $ && (M.isColor && V > 2 || (z = Math.round(z * $) / $)), Q.push(z);
+      for (var A = k(g - M.start - M.delay, 0, M.duration) / M.duration, U = isNaN(A) ? 1 : M.easing(A), E = M.to.strings, $ = M.round, Q = [], Ae = M.to.numbers.length, F = void 0, j = 0; j < Ae; j++) {
+        var z = void 0, se = M.to.numbers[j], ce = M.from.numbers[j] || 0;
+        M.isPath ? z = Ge(M.value, U * se, M.isPathTargetInsideSVG) : z = ce + U * (se - ce), $ && (M.isColor && j > 2 || (z = Math.round(z * $) / $)), Q.push(z);
       }
       var fe = E.length;
       if (!fe)
@@ -805,7 +805,7 @@ function sr(e, r) {
         if (!i)
           v.push(Math.abs(u - T));
         else {
-          var S = a ? (i[0] - 1) / 2 : u % i[0], w = a ? (i[1] - 1) / 2 : Math.floor(u / i[0]), B = T % i[0], j = Math.floor(T / i[0]), L = S - B, M = w - j, A = Math.sqrt(L * L + M * M);
+          var S = a ? (i[0] - 1) / 2 : u % i[0], w = a ? (i[1] - 1) / 2 : Math.floor(u / i[0]), B = T % i[0], V = Math.floor(T / i[0]), L = S - B, M = w - V, A = Math.sqrt(L * L + M * M);
           o === "x" && (A = -L), o === "y" && (A = -M), v.push(A);
         }
         x = Math.max.apply(Math, v);
@@ -938,5 +938,5 @@ class gr {
   }
 }
 export {
-  gr as Toaster
+  gr as default
 };

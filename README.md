@@ -13,8 +13,9 @@ npm install vanilla-toaster
 ```
 
 Or import from CDN `https://cdn.jsdelivr.net/npm/vanilla-toaster@latest/dist/vanilla-toaster.es.js`.
-```
-import VanillaToaster from 
+
+```js
+import Toaster from 'https://cdn.jsdelivr.net/npm/vanilla-toaster@latest/dist/vanilla-toaster.es.js';
 ```
 
 ## Usage 
@@ -29,7 +30,7 @@ document.body.appendChild(toaster);
 new Toaster(toaster);
 ```
 
-### Call anywhere
+### Toast anywhere
 
 ```js
 import Toaster from 'vanilla-toaster';
