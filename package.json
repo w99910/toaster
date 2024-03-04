@@ -1,6 +1,6 @@
 {
   "name": "vanilla-toaster",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Use Vanilla Toaster Globally",
   "main": "index.js",
   "scripts": {

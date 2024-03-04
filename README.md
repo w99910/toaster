@@ -12,10 +12,10 @@ Import via NPM.
 npm install vanilla-toaster
 ```
 
-Or import from CDN `https://cdn.jsdelivr.net/npm/vanilla-toaster@latest/dist/vanilla-toaster.es.js`.
+Or import from CDN `https://cdn.jsdelivr.net/npm/vanilla-toaster@latest/dist/vanilla-toaster.js`.
 
 ```js
-import Toaster from 'https://cdn.jsdelivr.net/npm/vanilla-toaster@latest/dist/vanilla-toaster.es.js';
+import Toaster from 'https://cdn.jsdelivr.net/npm/vanilla-toaster@latest/dist/vanilla-toaster.js';
 ```
 
 ## Usage 
