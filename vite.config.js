@@ -4,9 +4,9 @@ export default defineConfig({
     build: {
         lib: {
             entry: './index.js',
-            name: 'toaster',
+            name: 'vanilla-toaster',
             formats: ['es'],
-            fileName: (format) => `toaster.js`
+            fileName: (format) => `vanilla-toaster.js`
         },
         outDir: "./dist/",
         emptyOutDir: true,

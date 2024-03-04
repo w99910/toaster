@@ -15,7 +15,7 @@ export const warning = `<svg class='w-full h-full' width="24" height="24" viewBo
 
 let instance;
 
-export default class Toaster {
+export default class VanillaToaster {
     protected element: HTMLElement;
     protected messageElement: HTMLElement;
     protected iconElement: HTMLElement;

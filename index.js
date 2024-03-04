@@ -1,1 +1,2 @@
-export {default as Toaster} from "./src/Toaster";
+import VanillaToaster from "./src/VanillaToaster";
+export default VanillaToaster;

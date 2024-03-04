@@ -1,5 +1,5 @@
 {
-  "name": "toaster",
+  "name": "vanilla-toaster",
   "version": "0.0.1",
   "description": "Use Vanilla Toaster Globally",
   "main": "index.js",
@@ -11,7 +11,8 @@
     "Global",
     "Toast",
     "Vanilla",
-    "Toaster"
+    "Toaster",
+    "Vanilla-toaster"
   ],
   "author": "Thomas Brillion",
   "license": "MIT",
@@ -20,5 +21,9 @@
   },
   "devDependencies": {
     "vite": "^5.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w99910/vanilla-toaster"
   }
 }
