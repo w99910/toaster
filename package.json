@@ -1,0 +1,24 @@
+{
+  "name": "toaster",
+  "version": "0.0.1",
+  "description": "Use Vanilla Toaster Globally",
+  "main": "index.js",
+  "scripts": {
+    "build":"vite build"
+  },
+  "keywords": [
+    "Toaster",
+    "Global",
+    "Toast",
+    "Vanilla",
+    "Toaster"
+  ],
+  "author": "Thomas Brillion",
+  "license": "MIT",
+  "dependencies": {
+    "animejs": "^3.2.2"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4"
+  }
+}
